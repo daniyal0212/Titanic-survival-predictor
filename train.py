@@ -17,8 +17,8 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 
 # Load the data
 def load_data():
-    train_data = pd.read_csv(os.path.join(DATA_DIR, 'train.csv'))
-    test_data = pd.read_csv(os.path.join(DATA_DIR, 'test.csv'))
+    train_data = pd.read_csv(os.path.join(BASE_DIR, 'train.csv'))
+    test_data = pd.read_csv(os.path.join(BASE_DIR, 'test.csv'))
     return train_data, test_data
 
 # Check for missing values and data types
